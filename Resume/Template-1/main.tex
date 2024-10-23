@@ -1,0 +1,173 @@
+% a mashup of hipstercv, friggeri and twenty cv
+% https://www.latextemplates.com/template/twenty-seconds-resumecv
+% https://www.latextemplates.com/template/friggeri-resume-cv
+
+\documentclass[lighthipster]{simplehipstercv}
+% available options are: darkhipster, lighthipster, pastel, allblack, grey, verylight, withoutsidebar
+% withoutsidebar
+\usepackage[utf8]{inputenc}
+\usepackage[default]{raleway}
+\usepackage[margin=1cm, a4paper]{geometry}
+\usepackage{tikz}
+
+%------------------------------------------------------------------ Variablen
+
+\newlength{\rightcolwidth}
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{0.23\textwidth}
+\setlength{\rightcolwidth}{0.75\textwidth}
+
+%------------------------------------------------------------------
+\title{New Simple CV}
+\author{\LaTeX{} Ninja}
+\date{June 2019}
+
+\begin{document}
+
+
+\thispagestyle{empty}
+%-------------------------------------------------------------
+
+\section*{Start}
+
+\simpleheader{headercolour}{Anaswara K V}{}{\small
++91 7994196855  | Moothal House,puthiyapuzhakara,Kunhimangalam,kovvapuram, kannur,Kerala,670309 | anaswarakv569@gmail.com}{white}
+
+
+
+
+%------------------------------------------------
+
+% this has to be here so the paracols starts..
+\subsection*{}
+\vspace{4em}
+
+\setlength{\columnsep}{1.5cm}
+\columnratio{0.23}[0.75]
+\begin{paracol}{2}
+\hbadness5000
+%\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
+
+\paracolbackgroundoptions
+
+% 0.9,0.9,0.9 -- 0.8,0.8,0.8
+
+
+\footnotesize
+{\setasidefontcolour
+\flushright
+\begin{center}
+    \begin{tikzpicture}
+        % Draw a black rectangle around the image
+        \draw[thick, black] (0,0) rectangle (3.3,3.3); % Adjust dimensions for the border
+        % Include the image
+        \node at (1.65, 1.65) {\includegraphics[width=3cm,height=3cm]{WhatsApp Image 2024-10-23 at 10.28.07 PM.jpeg}};
+    \end{tikzpicture}
+\end{center}
+
+\vspace{1cm}
+
+
+\bg{cvgreen}{white}{Personal} \\[0.5em]
+Anaswara K V
+
+Female
+
+Nationality: Indian
+
+12/4/2000
+
+\bigskip
+
+\vspace{2cm}
+
+\bg{cvgreen}{white}{Key skills} \\[0.5em]
+
+ ~•~ Sample collection and processing \\ ~•~ Excellent communication and lean work \\
+ 
+  ~•~ Time management \\~•~ Hard working \\~•~ Flexible working
+
+\bigskip
+\vspace{2cm}
+\bg{cvgreen}{white}{Other skills} \\[0.5em]
+
+ ~•~ MS Excel\\ ~•~ Presentation Skills \\
+ 
+  ~•~ Report Writing 
+
+\bigskip
+
+
+
+
+
+
+
+\phantom{turn the page}
+
+\phantom{turn the page}
+}
+%-----------------------------------------------------------
+\switchcolumn
+
+\small
+\section*{ABOUT ME}
+
+I am a passionate and curious individual with a strong interest in the medical field and laboratory sciences. My enthusiasm for scientific inquiry drives me to explore innovative solutions and contribute to advancements in healthcare. I enjoy collaborating with others and thrive in dynamic environments where I can apply my analytical skills and attention to detail. Committed to continuous learning, I aim to grow both personally and professionally in the ever-evolving world of medical technology.
+\vspace{0.75cm}
+
+\section*{EXPERIENCE}
+
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{2023--2024}{Lab Trainee }{H.R.D LBS}{ Perumbavoor  \color{cvred}}{Gained 10 months of experience as a Lab Technician in a medical laboratory at H.R.D, LBS, where I performed diagnostic tests, maintained lab equipment, ensured quality control, and collaborated with healthcare professionals to deliver accurate results.}{Screenshot 2024-10-23 at 11.25.45 PM} \\
+   
+\end{tabular}
+\vspace{0.75cm}
+
+
+
+
+\section*{Education}
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{2021--2023}{Unity Institute Diploma in Medical Lab Technology}{DMLT}{ Kanhangad  \color{cvred}}{}{Screenshot 2024-10-23 at 11.25.45 PM} \\
+    \cvevent{2016--2017}{Girls’ HSS,Payyanur}{Plus two}{ Payyanur  \color{cvred}}{}{Screenshot 2024-10-23 at 11.25.45 PM} \\
+    \cvevent{2014--2015}{G.H.S.S Kunhimangalam}{Sslc}{ Kunhimangalam  \color{cvred}}{}{Screenshot 2024-10-23 at 11.25.45 PM} \\
+    
+\end{tabular}
+\vspace{0.75cm}
+
+
+\section*{Objective}
+To seek a highly progressive job environment in a dynamic organization, in which I can contribute my skills to
+enhance my career and exceeding organizational objectives with the attributes of time quality and discipline.
+\bigskip
+\vspace{0.75cm}
+\section*{Languages}
+\begin{tabular}{l | ll}
+\textbf{Malayalam}  & {\phantom{x}\footnotesize Mother Tongue} \\
+\textbf{English}  & \pictofraction{\faCircle}{cvgreen}{3}{black!30}{1}{\tiny} \\
+\textbf{Hindi}  & \pictofraction{\faCircle}{cvgreen}{1}{black!30}{3}{\tiny} \\
+\textbf{Tamil}  & \pictofraction{\faCircle}{cvgreen}{1}{black!30}{3}{\tiny}
+\end{tabular}
+\bigskip
+
+
+
+
+
+
+
+
+\vfill{} % Whitespace before final footer
+
+%----------------------------------------------------------------------------------------
+%	FINAL FOOTER
+%----------------------------------------------------------------------------------------
+\setlength{\parindent}{0pt}
+\begin{minipage}[t]{\rightcolwidth}
+
+\end{minipage}
+
+\end{paracol}
+
+\end{document}
