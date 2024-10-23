@@ -1,0 +1,295 @@
+%-------------------------
+% Resume in Latex
+% Author : Vaishanth
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}%\setmainfont{Times New Roman}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% \usepackage[T1]{fontenc}
+% \usepackage[T1]{fontenc}
+% \usepackage{cochineal}
+% \usepackage{fourier}
+
+% \usepackage{fontspec}
+% \usepackage{polyglossia}
+% \setmainlanguage{german}
+% \setmainfont{Times New Roman}
+
+% serif
+\usepackage{CormorantGaramond}
+\usepackage{charter}
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+\urlstyle{same}
+
+\definecolor{airforceblue}{rgb}{0.36, 0.54, 0.66}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSingleSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.1in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------\usepackage{fontspec}
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+%----------HEADING----------
+
+
+\begin{center}
+    {\huge VISHNU M} \\ \vspace{0.20cm} 
+    {\large Statistician} \\ \vspace{0.20cm} 
+    {+917356861142} ~ 
+    \small{-}
+    {vishnupakkam11@gmail.com} ~ 
+    \small{-}
+    {Barayil veed ,Charalkadav pakkam(po) Pallikera,
+Kasaragod(Dist)}  
+    
+    \vspace{-7pt}
+
+\end{center}
+\vspace{0.1cm}
+\section{\color{airforceblue}ABOUT ME }
+  As a statistician, I am passionate about unlocking insights from data to drive informed decision-making and solve complex problems.I have strong background in Mathematics,statistics and Data Analysis.
+  \\
+  \vspace{0.1cm}
+I am detail-oriented and methodical in my approach to data analysis, ensuring accuracy and reliability in my findings. I excel in communicating complex statistical concepts and insights to audience,fostering collaboration and driving decision-making across teams.
+\\
+  \vspace{0.1cm}
+I have Masters Degree in Statistics,I have experience working in both academic and indus- try settings.My experience includes designing,conducting surveys,and analysis and i have a strong proficiency in statistical software such as R, Python, and C, allowing me to efficiently collect, clean, and analyze data from various sources.
+\\
+  \vspace{0.1cm}
+In summary, as a statistician, Continuous learning and professional development are impor- tant to me, and I am committed to staying updated with the latest developments in statistics and data science. I am excited about the opportunity to apply my skills and expertise to solve real-world problems and make a positive impact in statistics
+
+\vspace{-7pt}
+
+%-----------EDUCATION-----------
+\section{\color{airforceblue}EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Kannur University,Nehru Arts \& Science College Kanhangad}{Kasaragod, Kerala, India}
+      {M.Sc. Statistics}{2022-2024}
+    \vspace{-4pt}
+
+    \resumeSubheading
+      {Kannur University,Nehru Arts \& Science College Kanhangad}{Kasaragod, Kerala, India}
+      {B.Sc. Statistics}{2019-2022}
+    \vspace{-10pt}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{\color{airforceblue}TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{\normalsize{Programming Languages:}}{ \normalsize{Python, C, R, html, css, Latex}} \\
+      \vspace{1.2pt}
+      
+     \textbf{\normalsize{Areas of specialization:}}{ \normalsize{Datascience, Analysis, Experimental Design}} \\
+      \vspace{1.2pt}
+      
+    
+      \textbf{\normalsize{Other Skills:}}{ \normalsize{Statistical Analysis, Data Management, Data visualisation, Regression Analysis , Time series Analysis, Project Management, critical Thinking, Decision Making, Programming}
+
+     % copy and paste above textbf block to add more 
+}
+    
+ \end{itemize}
+ \vspace{-16pt}
+ 
+
+
+
+ %-----------PROJECTS-----------
+\section{\color{airforceblue}ACADEMIC RECORD}    
+   \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{\normalsize{UG:}}{ \normalsize{92.50\%}} \\
+      \vspace{1.2pt}
+      
+     \textbf{\normalsize{Class 12:}}{ \normalsize{97\%}} \\
+      \vspace{1.2pt}
+      
+    
+      \textbf{\normalsize{Class 10:}}{ \normalsize{100\%}
+
+     % copy and paste above textbf block to add more 
+}
+ \vspace{-8pt}
+%
+
+%-----------Publications---------------
+\section{\color{airforceblue}LANGUAGES}
+    
+  \resumeItemListStart
+    \resumeItem{\normalsize{English:Fluent}}
+
+    \resumeItem{\normalsize{Malayalam:Native Speaker}}
+
+
+    \resumeItem{\normalsize{Hindi:Intermediate}}
+
+   
+
+    
+
+
+    % copy and paste above resumeItem block to add more 
+    
+  \resumeItemListEnd 
+      
+\vspace{-5pt}
+
+%-----------EXTRACURRICULAR---------------
+\section{\color{airforceblue}EXTRACURRICULAR ACTIVITIES}
+    
+      \resumeItemListStart
+        \resumeItem{\normalsize{\textbf{National Service Scheme (NSS) Volunteer}   {} }} 
+       \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     {\normalsize{Kannur University,Nehru Arts \& Science College Kanhangad }}{ \normalsize{(2019-2021)}} \\
+      \vspace{1.2pt}
+      
+     {\normalsize{DHSE-GHSS Udma:}}{ \normalsize{(2017-2019)}} \\
+      \vspace{1.2pt}
+    
+     % copy and paste above textbf block to add more 
+}
+
+        Served as a volunteer with the NSS unit, actively participating in community service projects, awareness campaigns, and social initiatives. Coordinated and organized [specific activities or projects], collaborating with fellow volunteers and community members to achieve project goals. Developed leadership, teamwork, and communication skills through engagement with diverse groups and stakeholders.
+
+        % copy and paste above resumeItem block to add more 
+      \resumeItemListEnd 
+      
+\vspace{-5pt}
+
+\section{\color{airforceblue}REFERENCE}
+ 
+\textbf{Dr.Udaya A}\\
+Assistant Professor-NASC 
+\\9946156037
+
+        
+
+        
+\end{document}
